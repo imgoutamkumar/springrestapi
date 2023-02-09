@@ -5,23 +5,23 @@ import java.util.List;
 import com.example.springrestapi.model.Employee;
 
 public interface EmployeeService {
-    List<Employee> getemployees(int pageNumber, int pageSize);
+   List<Employee> getemployees(int pageNumber, int pageSize);
 
-    Employee saveEmployee(Employee employee);
+   // Employee saveEmployee(Employee employee);
 
-    Employee getSingleEmployee(Long id);
+   Employee getSingleEmployee(Long id);
 
-    void deleteEmployee(Long id);
+   void deleteEmployee(Long id);
 
-    Employee updateEmployee(Employee employee);
+   Employee updateEmployee(Employee employee);
 
-    List<Employee> gEmployeesByName(String name);
+   // List<Employee> getEmployeesByName(String name);
 
-    List<Employee> getEmployeesByNameAndLocation(String name, String location);
+   // List<Employee> getEmployeesByNameAndLocation(String name, String location);
 
-    List<Employee> getEmployeesByKeyword(String name);
+   // List<Employee> getEmployeesByKeyword(String name);
 
-    List<Employee> getEmployeesByNameOrLocation(String name, String location);
+   // List<Employee> getEmployeesByNameOrLocation(String name, String location);
 
-    Integer deleteByEmployeeName(String name);
+   // Integer deleteByEmployeeName(String name);
 }
